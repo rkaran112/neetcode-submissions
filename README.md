@@ -52,6 +52,7 @@ print(Solution().maxProfit([7, 1, 5, 3, 6, 4]))  # 5
 Work in progress / lightly populated. This is a personal practice log, not a curated solutions library:
 
 - Only 2 problems solved so far, both from a single category.
-- No tests, no README per problem, no difficulty/topic tagging beyond the one folder name.
+- Basic unit tests live in `tests/test_solutions.py` (run with `python3 -m unittest tests/test_solutions.py`),
+  but there's no README per problem or difficulty/topic tagging beyond the one folder name.
 - No CI, linting, or automation — solutions are added manually as problems are solved.
 - Expect this repo to grow over time as more NeetCode problems are solved.
