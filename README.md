@@ -26,8 +26,9 @@ That's 2 distinct problems / 3 submission files in total as of this writing.
 
 ## Setup / running
 
-There is no build tooling, package manifest, or test suite in this repo. To try a solution locally, add the
-missing import and drive it yourself, e.g.:
+There is no build tooling or package manifest in this repo. Basic unit tests live in
+`tests/test_solutions.py` (run with `python3 -m unittest tests/test_solutions.py`). To try a solution
+directly instead, add the missing import and drive it yourself, e.g.:
 
 ```python
 from typing import List
@@ -52,7 +53,7 @@ print(Solution().maxProfit([7, 1, 5, 3, 6, 4]))  # 5
 Work in progress / lightly populated. This is a personal practice log, not a curated solutions library:
 
 - Only 2 problems solved so far, both from a single category.
-- Basic unit tests live in `tests/test_solutions.py` (run with `python3 -m unittest tests/test_solutions.py`),
-  but there's no README per problem or difficulty/topic tagging beyond the one folder name.
+- Test coverage is limited to what's in `tests/test_solutions.py` — there's no README per problem or
+  difficulty/topic tagging beyond the one folder name.
 - No CI, linting, or automation — solutions are added manually as problems are solved.
 - Expect this repo to grow over time as more NeetCode problems are solved.
