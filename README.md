@@ -20,9 +20,10 @@ That's 2 distinct problems / 3 submission files in total as of this writing.
 ## Tech stack
 
 - **Python 3** — all solutions are written as a `Solution` class with a single method, matching the format
-  LeetCode/NeetCode use for submissions. Files rely on `List` from `typing` without importing it, so they are
-  not directly runnable as standalone scripts — they're meant to be pasted into the NeetCode/LeetCode online
-  editor, which provides that import implicitly.
+  LeetCode/NeetCode use for submissions. Some files (e.g. `buy-and-sell-crypto`) rely on `List` from `typing`
+  without importing it, so they aren't directly runnable as standalone scripts as-is — they're meant to be
+  pasted into the NeetCode/LeetCode online editor, which provides that import implicitly. Others (e.g.
+  `is-palindrome`) use no typing imports and run fine as standalone scripts already.
 
 ## Setup / running
 
