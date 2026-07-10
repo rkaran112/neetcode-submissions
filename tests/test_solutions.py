@@ -60,5 +60,15 @@ class TestMaxProfit(unittest.TestCase):
         self.assertEqual(self.solution.maxProfit([2, 1]), 0)
 
 
+class TestMaxProfitFirstSubmission(TestMaxProfit):
+    """submission-0 is an earlier attempt at the same problem as submission-1;
+    it's kept archived side by side, so it gets the same coverage."""
+
+    def setUp(self):
+        self.solution = load_solution(
+            "Data Structures & Algorithms", "buy-and-sell-crypto", "submission-0.py"
+        )
+
+
 if __name__ == "__main__":
     unittest.main()
