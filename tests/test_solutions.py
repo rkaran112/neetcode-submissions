@@ -40,6 +40,12 @@ class TestIsPalindrome(unittest.TestCase):
     def test_single_character(self):
         self.assertTrue(self.solution.isPalindrome("a"))
 
+    def test_even_length_palindrome(self):
+        self.assertTrue(self.solution.isPalindrome("abba"))
+
+    def test_two_characters_not_palindrome(self):
+        self.assertFalse(self.solution.isPalindrome("0P"))
+
 
 class TestMaxProfit(unittest.TestCase):
     def setUp(self):
