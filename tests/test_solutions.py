@@ -65,6 +65,9 @@ class TestMaxProfit(unittest.TestCase):
     def test_buy_on_last_day_no_profit(self):
         self.assertEqual(self.solution.maxProfit([2, 1]), 0)
 
+    def test_constant_prices_no_profit(self):
+        self.assertEqual(self.solution.maxProfit([4, 4, 4, 4]), 0)
+
 
 class TestMaxProfitFirstSubmission(TestMaxProfit):
     """submission-0 is an earlier attempt at the same problem as submission-1;
