@@ -56,5 +56,5 @@ Work in progress / lightly populated. This is a personal practice log, not a cur
 - Only 2 problems solved so far, both from a single category.
 - Test coverage is limited to what's in `tests/test_solutions.py` — there's no README per problem or
   difficulty/topic tagging beyond the one folder name.
-- No CI, linting, or automation — solutions are added manually as problems are solved.
+- CI runs the unit test suite on every push/PR to `main`; no linting beyond that yet.
 - Expect this repo to grow over time as more NeetCode problems are solved.
