@@ -46,6 +46,12 @@ class TestIsPalindrome(unittest.TestCase):
     def test_two_characters_not_palindrome(self):
         self.assertFalse(self.solution.isPalindrome("0P"))
 
+    def test_numeric_palindrome(self):
+        self.assertTrue(self.solution.isPalindrome("12321"))
+
+    def test_numeric_non_palindrome(self):
+        self.assertFalse(self.solution.isPalindrome("12345"))
+
 
 class TestMaxProfit(unittest.TestCase):
     def setUp(self):
