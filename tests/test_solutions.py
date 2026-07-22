@@ -53,6 +53,16 @@ class TestIsPalindrome(unittest.TestCase):
         self.assertFalse(self.solution.isPalindrome("12345"))
 
 
+class TestIsPalindromeSecondSubmission(TestIsPalindrome):
+    """submission-1 is a later attempt at the same problem as submission-0
+    (avoids building an intermediate cleaned list); it gets the same coverage."""
+
+    def setUp(self):
+        self.solution = load_solution(
+            "Data Structures & Algorithms", "is-palindrome", "submission-1.py"
+        )
+
+
 class TestMaxProfit(unittest.TestCase):
     def setUp(self):
         self.solution = load_solution(
