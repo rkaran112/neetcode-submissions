@@ -98,5 +98,27 @@ class TestMaxProfitFirstSubmission(TestMaxProfit):
         )
 
 
+class TestHasDuplicate(unittest.TestCase):
+    def setUp(self):
+        self.solution = load_solution(
+            "Data Structures & Algorithms", "duplicate-integer", "submission-1.py"
+        )
+
+    def test_has_duplicate(self):
+        self.assertTrue(self.solution.hasDuplicate([1, 2, 3, 3]))
+
+    def test_no_duplicate(self):
+        self.assertFalse(self.solution.hasDuplicate([1, 2, 3, 4]))
+
+    def test_empty_list(self):
+        self.assertFalse(self.solution.hasDuplicate([]))
+
+    def test_single_element(self):
+        self.assertFalse(self.solution.hasDuplicate([1]))
+
+    def test_all_duplicates(self):
+        self.assertTrue(self.solution.hasDuplicate([5, 5, 5, 5]))
+
+
 if __name__ == "__main__":
     unittest.main()
